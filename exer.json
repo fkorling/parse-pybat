@@ -1,0 +1,153 @@
+{
+  "desc": "",
+  "enabled": false,
+  "exercises": [
+    {
+      "argnames": [
+        "bad_weather"
+      ],
+      "custombody": false,
+      "custombodycontent": "",
+      "desc": "<p>Start your day by greeting your friends with a happy &quot;Hello World!&quot;.&nbsp;However, if the weather is really bad you might want to hold back a little and simply say &quot;Mmmpf..&quot;. bad_weather is a parameter that is either True or False.</p>\r\n\r\n<p>Write the code needed to greet sensibly.</p>\r\n",
+      "fname": "greeting",
+      "id": "greeting",
+      "links": [],
+      "pydocs": [],
+      "shortdesc": "",
+      "tags": [
+        "string",
+        "easy"
+      ],
+      "tests": "[{'args': [True], 'exp': 'Mmmpf..'}, {'args': [False], 'exp': 'Hello World!'}]",
+      "title": "Greet the World"
+    },
+    {
+      "argnames": [
+        "text"
+      ],
+      "custombody": false,
+      "custombodycontent": "",
+      "desc": "<p>Your task is to help the Q-dog find all Q:s in a text string, both big &#39;Q&#39;:s and small ones like &#39;q&#39;.</p>\r\n\r\n<p>Write a function that&nbsp;Return the total number of &#39;Q&#39;:s and &#39;q&#39;:s&nbsp;in the input string text.</p>\r\n\r\n<p><strong>Example</strong>: count_Q(&quot;quesque c&#39;est que ca&quot;) returns 3.</p>\r\n\r\n<p><strong>Hint</strong>: Use&nbsp;<span style=\"font-family:courier new,courier,monospace\">count()</span></p>\r\n",
+      "fname": "count_Q",
+      "id": "not enough q",
+      "links": [],
+      "pydocs": [],
+      "shortdesc": "Help the Q-dog find its dinner",
+      "tags": [
+        "string",
+        "easy"
+      ],
+      "tests": "[{'args': ['Qvintus'], 'exp': 1}, {'args': ['quorn'], 'exp': 1}, {'args': ['Question the conquerer'], 'exp': 2}, {'args': ['Hejsan hoppsan lillebror!'], 'exp': 0}, {'args': [\"quesque c'est que ca\"], 'exp': 3}]",
+      "title": "Not enough Q:s"
+    },
+    {
+      "argnames": [
+        "text"
+      ],
+      "custombody": false,
+      "custombodycontent": "",
+      "desc": "<p>Stealing letters is a crime but the Q-dog really can&#39;t help himself so your job is to make his life easier. Find the first letter in the string text and make sure that all occurences of that letter are transformed into big juicy Q:s. Like so:</p>\r\n\r\n<p>&quot;Propeller&quot;&nbsp;--&gt; &quot;QroQeller&quot;,&nbsp;&quot;Ananas&quot; --&gt; &quot;QnQnQs&quot;</p>\r\n\r\n<p>Oh by the way: If there actually is a Q or a q in the text string, reward the Q-dog by adding 3 Q:s at the end:</p>\r\n\r\n<p>&quot;Opaque&quot; --&gt; &quot;OpaqueQQQ&quot;</p>\r\n\r\n<p>Write the function that does the magic and returns the Q fattened diet to the Q-dog</p>\r\n",
+      "fname": "add_Q",
+      "id": "fatten the Q-dog",
+      "links": [],
+      "pydocs": [],
+      "shortdesc": "",
+      "tags": [],
+      "tests": "[{'args': ['Quagga'], 'exp': 'QuaggaQQQ'}, {'args': ['Opaque'], 'exp': 'OpaqueQQQ'}, {'args': ['Ananas'], 'exp': 'QnQnQs'}, {'args': ['Propeller'], 'exp': 'QroQeller'}]",
+      "title": "Fatten the Q-dog!"
+    },
+    {
+      "argnames": [
+        "text"
+      ],
+      "custombody": false,
+      "custombodycontent": "def only_Qwords_please(text):\r\n    qwords = []\r\n\r\n    return \" \".join(qwords)               ",
+      "desc": "<p>A long text confuses the Q-dog making it almost impossible for him to locate the Q:s and plan his diet.&nbsp;</p>\r\n\r\n<p>Your task is to break up a text into individual words and return only those words that contains a Q.</p>\r\n\r\n<p>The Q-dog advices that you should try the string.split method&nbsp;and look at each and every word. Stick them in a list but please remember to join up the words again. Our canine friend isn&#39;t all that into comlicated data structures. He just wants his lunch. All right? Use &quot; &quot;.join(list) to do the magick.</p>\r\n",
+      "fname": "only_Qwords_please",
+      "id": "too_many_words",
+      "links": [],
+      "pydocs": [],
+      "shortdesc": "",
+      "tags": [
+        "list",
+        "string,",
+        "for"
+      ],
+      "tests": "[{'args': ['Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui'], 'exp': 'doloremque eaque quae quasi quia quia consequuntur qui sequi Neque quisquam qui quia quia numquam aliquam quaerat quis aliquid consequatur? Quis qui'}]",
+      "title": "Too many words"
+    },
+    {
+      "argnames": [
+        "text"
+      ],
+      "custombody": false,
+      "custombodycontent": "",
+      "desc": "<p>Diet planning is a meticulous business and you&#39;ll need gross numbers to get the balance right. Or so the Q-dog belives.</p>\r\n\r\n<p>Please write a function that count the number &nbsp;of &#39;Q&#39;:s in a text. Upper or lower case? Doesn&#39;t matter. Just count them and return the number of occurance.</p>\r\n\r\n<p><strong>Example</strong>: &quot;Que pasa&quot; should return&nbsp;1</p>\r\n\r\n<p><strong>Hint</strong>: <span style=\"font-family:courier new,courier,monospace\">count</span></p>\r\n",
+      "fname": "counting_q",
+      "id": "count_q",
+      "links": [],
+      "pydocs": [],
+      "shortdesc": "",
+      "tags": [],
+      "tests": "[{'args': ['Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?'], 'exp': 27}, {'args': ['No food for selective dogs..'], 'exp': 0}, {'args': ['Herr Qvintus Qvist'], 'exp': 2}]",
+      "title": "Count the Q:s"
+    },
+    {
+      "argnames": [
+        "whitespace"
+      ],
+      "custombody": false,
+      "custombodycontent": "def save_the_news(whitespace):\r\n    garbled_story = \"OnceQuponQaQtimeQthereQwasQaQhappyQdogQwhoQonlyQeverQthoughtQaboutQsleepQandQchasingQcats\"\r\n    \r\n    return proper_story",
+      "desc": "<p>One bad night, the Q-dog frankly looses it and steal all whitespace from a national newspaper then he forces the night editor to insert &#39;Q&#39;:s between words. What a rascal! The next day, nobody could read the news and the Q-dog felt sorry for what he&#39;d done. Help him to set matters straight.&nbsp;</p>\r\n\r\n<p>Use the string.split() method with the letter &#39;Q&#39; as argument. This will return a list of words sans &#39;Q&#39;:s<br />\r\nThen join up the elements in the list using a cute trick: by typing whitespace.join() the elements in the list will be nicely joined up again. Just don&#39;t forget to pass the list of words as argument.&nbsp;</p>\r\n\r\n<p>Complicated? Well, you&#39;ve better hurry up or&nbsp;nobody will know if there are news about upcoming earthquakes, will they. Don&#39;t be too harsh on the Q-dog as he&#39;s feeling queasy having&nbsp;overindulged himself..&nbsp;</p>\r\n",
+      "fname": "save_the_news",
+      "id": "findspace",
+      "links": [],
+      "pydocs": [],
+      "shortdesc": "Try the split() / join() pattern!",
+      "tags": [
+        "string",
+        "list"
+      ],
+      "tests": "[{'args': [' '], 'exp': 'Once upon a time there was a happy dog who only ever thought about sleep and chasing cats'}]",
+      "title": "Find space between the words"
+    },
+    {
+      "argnames": [
+        "text"
+      ],
+      "custombody": false,
+      "custombodycontent": "def rot13(text):\r\n    def rot13char(c):\r\n        if c.islower():\r\n            return c\r\n        elif c.isupper():\r\n            return c\r\n        else:\r\n            return c\r\n\r\n    return text                    ",
+      "desc": "<p>These days when NSA is listening on everything it is important to encrypt your secrets.</p>\r\n\r\n<p>Implement the ROT-13 algorithm to encrypt or decrypt the input string</p>\r\n\r\n<p><a href=\"http://en.wikipedia.org/wiki/ROT13\">http://en.wikipedia.org/wiki/ROT13</a></p>\r\n\r\n<p>The methods ord() and chr() can be useful for converting between characters and ascii values</p>\r\n",
+      "fname": "rot13",
+      "id": "rot13",
+      "links": [],
+      "pydocs": [],
+      "shortdesc": "Decrypt and encrypt text",
+      "tags": [],
+      "tests": "[{'args': ['hello world'], 'exp': 'uryyb jbeyq'}, {'args': ['Guvf vf frperg'], 'exp': 'This is secret'}]",
+      "title": "rot13"
+    },
+    {
+      "argnames": [
+        "string"
+      ],
+      "custombody": false,
+      "custombodycontent": "",
+      "desc": "<p>In internet chats, all cap words are usually interpreted as shouting, for example:&nbsp;&quot;This coding ball is REALLY SIMPLE!</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Create a function that takes a string as input, and return which position in the string the first screamed word has. In the example above, this would be be four.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Note that &quot;I&quot; is never shouted. &quot;Oh, I really LOVE pizza&quot; has a screaming index of 4, not 2.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>If there is no screamed word, 0 should be returned</p>\r\n",
+      "fname": "scream_index",
+      "id": "whenstartsscreaming",
+      "links": [],
+      "pydocs": [],
+      "shortdesc": "Take a string as argument. Return how many words there are in the string before the first ALLCAPS word",
+      "tags": [
+        "medium",
+        "string"
+      ],
+      "tests": "[{'args': ['ThIS is Realy EASY'], 'exp': 4}, {'args': ['I I I I'], 'exp': 0}, {'args': ['I am CERTAIN that THERE is COFFEE'], 'exp': 3}]",
+      "title": "Find first ALLCAPS word"
+    }
+  ],
+  "id": "basic_string_ex",
+  "name": "String exercises"
+}
+
